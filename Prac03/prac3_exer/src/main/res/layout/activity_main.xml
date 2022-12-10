@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="45dp"
+        android:layout_marginTop="100dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#C0C0C0" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="4"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:background="@drawable/button_background"
+            android:text="Clear"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonPer"
+            android:background="@drawable/button_background"
+            android:text="%"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonDiv"
+            android:background="@drawable/button_background"
+            android:text="/"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/buttonSeven"
+            android:background="@drawable/button_background"
+            android:text="7"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonEight"
+            android:background="@drawable/button_background"
+            android:text="8"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonnine"
+            android:background="@drawable/button_background"
+            android:text="9"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonMul"
+            android:background="@drawable/button_background"
+            android:text="*"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/buttonFour"
+            android:background="@drawable/button_background"
+            android:text="4"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonFive"
+            android:background="@drawable/button_background"
+            android:text="5"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonSix"
+            android:background="@drawable/button_background"
+            android:text="6"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonSub"
+            android:background="@drawable/button_background"
+            android:text="-"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/buttonOne"
+            android:background="@drawable/button_background"
+            android:text="1"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonTwo"
+            android:background="@drawable/button_background"
+            android:text="2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonThree"
+            android:background="@drawable/button_background"
+            android:text="3"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonPlus"
+            android:background="@drawable/button_background"
+            android:text="+"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/buttonZero"
+            android:background="@drawable/button_background"
+            android:text="0"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonDot"
+            android:background="@drawable/button_background"
+            android:text="."
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/buttonRes"
+            android:background="@drawable/button_background"
+            android:text="="
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"/>
+    </GridLayout>
+
+
+</LinearLayout>

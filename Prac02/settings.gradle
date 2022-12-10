@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Prac02"
 include ':app'
+include ':prac02_view'
+include ':prac02_homework'

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/myPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/my_image" />
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 : 이윤석"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/myPhoto"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:id="@+id/myUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학교 : 한림대학교"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/myPhoto"
+            android:layout_below="@id/myName"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:id="@+id/myMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학과 : 빅데이터"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/myPhoto"
+            android:layout_below="@id/myUniv" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tech Stack"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_width="140dp"
+                android:layout_height="3dp"
+                android:background="#8E71D5"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기획"
+                android:textSize="19dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Figma (UI Design)"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="언어"
+                android:textSize="19dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Python"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앱 개발"
+                android:textSize="19dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swift (iOS)"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kotlin (Android)"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D 그래픽"
+                android:textSize="19dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blender"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Career"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:layout_width="140dp"
+                android:layout_height="3dp"
+                android:background="#8E71D5"
+                android:layout_marginBottom="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 한림대학교  창업동아리 Dawn 대표"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 패션 플랫폼 Palette 기획"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 3D 가상 피팅 아바타 개발"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 자영업 단가계산기 어플 'YOUNEC' 기획"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. SW 창업 아이디어 경진대회(진행중)"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

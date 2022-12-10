@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_ingredient"
+        android:icon="@drawable/ingredient"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/menu_recipe"
+        android:icon="@drawable/recipe"
+        android:title="@null"/>
+
+    <item
+        android:id="@+id/menu_calculator"
+        android:icon="@drawable/calculator"
+        android:title="@null" />
+</menu>
