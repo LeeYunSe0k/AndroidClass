@@ -30,6 +30,7 @@
     </FrameLayout>
 
     <ImageView
+        android:id="@+id/ing_imageView"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="55dp"
-        android:text="용량"
+        android:text="용량(kg)"
         android:textStyle="bold"
         android:textSize="15sp"
         android:textColor="@color/black" />

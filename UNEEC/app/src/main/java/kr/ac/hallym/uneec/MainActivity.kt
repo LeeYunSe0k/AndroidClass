@@ -3,21 +3,15 @@ package kr.ac.hallym.uneec
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kr.ac.hallym.uneec.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
-    val screen = mutableListOf(
-        IngredientFragment(),
-        RecipeFragment(),
-        CalculatorFragment()
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -29,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.home_layout, IngredientFragment())
         transaction.commit()
     }
+
+    // 하단바 사용을 위한 bottomNavigationViewItemSelectedListener()
     private fun bottomNavigationViewItemSelectedListener(){
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){

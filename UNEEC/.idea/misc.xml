@@ -8,15 +8,15 @@
         <entry key="app/src/main/res/drawable/input_button.xml" value="0.1865" />
         <entry key="app/src/main/res/drawable/menu_item_color.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.1865" />
-        <entry key="app/src/main/res/layout/activity_ingredient_input.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_recipe_input.xml" value="0.19067028985507245" />
+        <entry key="app/src/main/res/layout/activity_ingredient_input.xml" value="0.21799621582031253" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20990600585937508" />
+        <entry key="app/src/main/res/layout/activity_recipe_input.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_calculator.xml" value="0.23278985507246377" />
-        <entry key="app/src/main/res/layout/fragment_ingredient.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_ingredient.xml" value="0.19855957031250002" />
         <entry key="app/src/main/res/layout/fragment_recipe.xml" value="0.23278985507246377" />
         <entry key="app/src/main/res/layout/ingredienet_recyclerview.xml" value="0.20833333333333334" />
-        <entry key="app/src/main/res/layout/item_recyclerview.xml" value="0.20697463768115942" />
+        <entry key="app/src/main/res/layout/item_recyclerview.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_menu_bottom.xml" value="0.1" />
       </map>
     </option>

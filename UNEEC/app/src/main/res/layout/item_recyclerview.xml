@@ -15,9 +15,10 @@
         android:layout_height="wrap_content" >
 
         <ImageView
+            android:id="@+id/item_imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/icon_menu"/>
+            android:src="@drawable/image_input"/>
     </FrameLayout>
 
     <LinearLayout
@@ -33,6 +34,7 @@
             android:textStyle="bold"
             android:textColor="#000000"
             android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
             android:text=""
             android:id="@+id/item_name" />
 
@@ -43,6 +45,7 @@
             android:textSize="14dp"
             android:textColor="#000000"
             android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
             android:id="@+id/item_size" />
         <TextView
             android:layout_width="match_parent"
@@ -50,6 +53,7 @@
             android:text=""
             android:textSize="14dp"
             android:textColor="#000000"
+            android:layout_marginLeft="15dp"
             android:id="@+id/item_price" />
     </LinearLayout>
 </LinearLayout>

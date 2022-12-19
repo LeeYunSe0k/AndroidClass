@@ -20,22 +20,11 @@ class RecipeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_recipe, container, false)
         binding = FragmentRecipeBinding.inflate(inflater, container, false)
 
-        val requestLauncher: ActivityResultLauncher<Intent> = registerForActivityResult(
-            ActivityResultContracts.StartActivityForResult()) {
-            it.data!!.getStringExtra("name")?.let{
-                contents?.add(it)
-                adapter.notifyDataSetChanged()
-            }
-        }
-
         binding.iconPlusRecipe.setOnClickListener {
-            val intent = Intent(getActivity(), RecipeInputActivity::class.java)
-            requestLauncher.launch(intent)
-            //startActivity(intent)
+            val intent = Intent(requireContext(), RecipeInputActivity::class.java)
+            startActivity(intent)
         }
 
         return binding.root

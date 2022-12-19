@@ -2,6 +2,7 @@ package kr.ac.hallym.uneec
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,30 +16,34 @@ import kr.ac.hallym.uneec.databinding.FragmentIngredientBinding
 class IngredientFragment : Fragment() {
     lateinit var binding: FragmentIngredientBinding
     lateinit var adapter: MyAdapter
-    var contents: MutableList<String>? = null
+    lateinit var db: DBHelper
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_ingredient, container, false)
-
         binding = FragmentIngredientBinding.inflate(inflater, container, false)
 
-        val requestLauncher: ActivityResultLauncher<Intent> = registerForActivityResult(
-            ActivityResultContracts.StartActivityForResult()) {
-            it.data!!.getStringExtra("name")?.let{
-                contents?.add(it)
-                adapter.notifyDataSetChanged()
-            }
+        binding.iconPlus.setOnClickListener {
+            val intent = Intent(requireContext(), IngredientInputActivity::class.java)
+            startActivity(intent)
         }
 
-        binding.iconPlus.setOnClickListener {
-            val intent = Intent(getActivity(), IngredientInputActivity::class.java)
-            requestLauncher.launch(intent)
-            //startActivity(intent)
-        }
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        db = DBHelper(requireContext())
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adapter = MyAdapter(db.allRecipe)
+        binding.myRecyclerView.adapter = adapter
+        adapter.notifyDataSetChanged()
+
     }
 }

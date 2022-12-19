@@ -9,10 +9,10 @@ import com.airbnb.lottie.LottieAnimationView
 import kr.ac.hallym.uneec.databinding.ActivitySplashBinding
 import kotlin.random.Random
 
+// Lottie를 이용하여 SplashActivity 구성
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_splash)
         val binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
